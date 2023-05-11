@@ -1,0 +1,14 @@
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\bin\Debug\net6.0\EntityFramework.deps.json
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\bin\Debug\net6.0\EntityFramework.runtimeconfig.json
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\bin\Debug\net6.0\EntityFramework.pdb
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\EntityFramework.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\EntityFramework.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\EntityFramework.AssemblyInfo.cs
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\EntityFramework.dll
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\refint\EntityFramework.dll
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\EntityFramework.pdb
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\EntityFramework.genruntimeconfig.cache
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\EntityFramework\obj\Debug\net6.0\ref\EntityFramework.dll

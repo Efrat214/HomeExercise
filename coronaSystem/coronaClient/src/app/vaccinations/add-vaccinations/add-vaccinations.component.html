@@ -1,0 +1,14 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+
+    <div class="form-froup row" style="width: 60%;">
+
+        <label class="col-sm-2 col-form-label mr-1">שם היצרן</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="v.manufacturer" placeholder="הכנס שם יצרן">
+        </div>
+    </div>
+</div>
+
+<button (click)="addvaccine()" class="btn btn-info">
+    הוספה
+</button>

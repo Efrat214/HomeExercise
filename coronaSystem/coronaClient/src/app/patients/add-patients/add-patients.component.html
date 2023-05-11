@@ -1,0 +1,108 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+
+    <div class="form-froup row" style="width: 60%;" *ngIf="firstHalf">
+
+        <label class="col-sm-2 col-form-label mr-1">שם פרטי</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="p.firstName" placeholder="הכנס שם פרטי" name="name"
+                #name="ngModel" minlength="2" required>
+            <span [hidden]="name.valid || name.pristine" class="text-danger float-right">שדה חובה ולפחות באורך 2
+                תווים</span>
+        </div>
+        <label class="col-sm-2 col-form-label mr-1">ש.משפחה</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="p.lastName" placeholder="הכנס שם משפחה" name="lastName"
+                #lastName="ngModel" minlength="2" required>
+            <span [hidden]="lastName.valid || lastName.pristine" class="text-danger float-right">שדה חובה ולפחות באורך 2
+                תווים</span>
+        </div>
+        <label class="col-sm-2 col-form-label m-1">ת.ז</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="p.patientId" placeholder="הכנס תעודת זהות"
+                pattern="(?!(00)\1*$)(?!9(?![0-8]))\d{5,9}$" name="id" #id="ngModel" required>
+            <span [hidden]="id.valid||id.pristine" class="text-danger float-right">שדה חובה ות"ז אינה תקינה</span>
+        </div>
+        <label class="col-sm-2 col-form-label m-1">טלפון</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="p.telephone" placeholder="הכנס מספר טלפון" name="tel"
+                #tel="ngModel" pattern="^(972|0)([23489]|77)[1-9]\d{6}$">
+            <span [hidden]="tel.valid || tel.pristine" class="text-danger float-right">מספר טלפון אינו תקין</span>
+        </div>
+        <label class="col-sm-2 col-form-label m-1">טלפון נייד</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="p.mobilePhone" placeholder="הכנס מספר טלפון נייד"
+                name="phone" #phone="ngModel" pattern="^(972|0|05)([23489]|5[02489]|77)[1-9]\d{6}$">
+            <span [hidden]="phone.valid || phone.pristine" class="text-danger float-right">מספר פלאפון אינו תקין</span>
+        </div>
+        <label class="col-sm-2 col-form-label mr-1">עיר</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="p.city" placeholder="הכנס עיר מגורים" minlength="2"
+                required name="city" #city="ngModel">
+            <span [hidden]="city.valid || city.pristine" class="text-danger float-right">שדה חובה ובאורך 2 תווים</span>
+        </div>
+        <label class="col-sm-2 col-form-label mr-1">רחוב</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="p.street" placeholder="הכנס רחוב מגורים" minlength="2"
+                required name="street" #street="ngModel">
+            <span [hidden]="street.valid || street.pristine" class="text-danger float-right">שדה חובה ובאורך 2
+                תווים</span>
+        </div>
+        <label class="col-sm-2 col-form-label mr-1">מספר בית</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" [(ngModel)]="p.numHouse" placeholder="הכנס מספר בית" required
+                name="numHouse" #numHouse="ngModel">
+            <span [hidden]="numHouse.valid || numHouse.pristine" class="text-danger float-right">שדה חובה</span>
+        </div>
+        <label class="col-sm-2 col-form-label mr-1">תאריך לידה</label>
+        <div class="col-sm-10">
+            <input type="date" class="form-control" [(ngModel)]="p.dateOfBirth" placeholder="הכנס תאריך לידה">
+        </div>
+        <label class="col-sm-2 col-form-label mr-1">בחר תמונת פרופיל</label>
+        <div class="ml-3 bd-highlight" style="width: 40%;">
+            <input type="file" (change)="uploadPhoto($event)" class="mt-2" accept="image/*" />
+            <div><img [src]="url"></div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="form-froup row text-left" style="width: 60%;" *ngIf="secondHalf">
+        <label class="col-sm-2 col-form-label mr-1">תאריך אבחון קורונה</label>
+        <div class="col-sm-10">
+            <input type="date" class="form-control" [(ngModel)]="p.positiveResultDate">
+        </div>
+        <label class="col-sm-2 col-form-label mr-1">תאריך החלמה</label>
+        <div class="col-sm-10">
+            <input type="date" class="form-control" [(ngModel)]="p.recoveryDate">
+        </div>
+        <div class="form-froup row" *ngFor="let vaccine of arrVaccineForPatient; let i = index">
+            <label class="col-sm-2 col-form-label mr-1" style="font-weight: bold;">חיסון {{ i + 1 }}</label>
+            <label class="col-sm-2 col-form-label mr-1">יצרן החיסון</label>
+            <div class="col-sm-10">
+                <select class="form-control" [(ngModel)]="vaccine.vaccineID">
+                    <option>--Select--</option>
+                    <option *ngFor="let vaccine of arrV let i = index" [ngValue]="i+1">
+                        {{vaccine.manufacturer}}
+                    </option>
+                </select>
+            </div>
+            <label class="col-sm-2 col-form-label mr-1">תאריך החיסון</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" [(ngModel)]="vaccine.date">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<button (click)="continue()" class="btn btn-info" *ngIf="firstHalf">
+    המשך
+</button>
+<button (click)="back()" class="btn btn-info mr-3" *ngIf="secondHalf">
+    חזור
+</button>
+<button (click)="addUser()" class="btn btn-info mr-3" *ngIf="secondHalf">
+    הוספה
+</button>

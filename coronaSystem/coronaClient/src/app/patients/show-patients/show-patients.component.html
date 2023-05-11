@@ -1,0 +1,123 @@
+<button type="button" class="btn btn-info float-left m-2" data-toggle="modal" data-target="#exampleModal"
+    (click)="addClick()" data-backdrop="static" data-keyboard="false">
+    הוספת פציינט
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">הוספת פציינט</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeClick()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <app-add-patients *ngIf="ActivateComp"></app-add-patients>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">פרטי קורונה</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeClick()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>יצרן החיסון</th>
+                            <th>תאריך החיסון</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let vaccine of arrV">
+                            <td>{{ vaccine.vaccine.manufacturer }}</td>
+                            <td>{{ vaccine.dateofvaccination}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                תעודת זהות
+            </th>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                שם פרטי
+            </th>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                ש.משפחה
+            </th>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                עיר
+            </th>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                רחוב
+            </th>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                מ' בית
+            </th>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                ת.ל
+            </th>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                אבחון קורונה
+            </th>
+            <th>
+                <div class="d-flex flex-row">
+                </div>
+                החלמה
+            </th>
+            <th>אפשרויות</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrp">
+            <td>{{item.patientId}}</td>
+            <td>{{item.firstName}}</td>
+            <td>{{item.lastName}}</td>
+            <td>{{item.city}}</td>
+            <td>{{item.street}}</td>
+            <td>{{item.numHouse}}</td>
+            <td>{{item.dateOfBirth}}</td>
+            <td>{{item.positiveResultDate}}</td>
+            <td>{{item.recoveryDate}}</td>
+            <td>
+                <button type="button" class="m-1 btn btn-light btn-outline-info" data-toggle="modal"
+                    data-target="#exampleModal1" (click)="show(item)" data-backdrop="static" data-keyboard="false">
+                    פרטי קורונה
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

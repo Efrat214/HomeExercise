@@ -1,0 +1,15 @@
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\bin\Debug\net6.0\Towers.exe
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\bin\Debug\net6.0\Towers.deps.json
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\bin\Debug\net6.0\Towers.runtimeconfig.json
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\bin\Debug\net6.0\Towers.dll
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\bin\Debug\net6.0\Towers.pdb
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\Towers.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\Towers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\Towers.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\Towers.AssemblyInfo.cs
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\Towers.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\Towers.dll
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\refint\Towers.dll
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\Towers.pdb
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\Towers.genruntimeconfig.cache
+C:\Users\1\Desktop\תכנות\עבודה\Towers\Towers\obj\Debug\net6.0\ref\Towers.dll

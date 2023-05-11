@@ -1,0 +1,17 @@
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\bin\Debug\net6.0\BLL.deps.json
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\bin\Debug\net6.0\BLL.dll
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\bin\Debug\net6.0\BLL.pdb
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\bin\Debug\net6.0\DAL.dll
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\bin\Debug\net6.0\DAL.pdb
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\bin\Debug\net6.0\EntityFramework.pdb
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\BLL.dll
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\refint\BLL.dll
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\BLL.pdb
+C:\Users\1\Desktop\תכנות\עבודה\CoronaDetails\BLL\obj\Debug\net6.0\ref\BLL.dll
